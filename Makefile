@@ -3,7 +3,7 @@
 VERSION ?= `cat VERSION`
 MAJ_VERSION := $(shell echo $(VERSION) | sed 's/\([0-9][0-9]*\)\.\([0-9][0-9]*\)\(\.[0-9][0-9]*\)*/\1/')
 MIN_VERSION := $(shell echo $(VERSION) | sed 's/\([0-9][0-9]*\)\.\([0-9][0-9]*\)\(\.[0-9][0-9]*\)*/\1.\2/')
-IMAGE_NAME ?= marksargento/alpine-elixir
+IMAGE_NAME ?= marksargento/alpine-erlang
 
 help:
 	@echo "$(IMAGE_NAME):$(VERSION)"
