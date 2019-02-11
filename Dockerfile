@@ -8,6 +8,6 @@ LABEL maintainer="Mark Sargento <marksargento.00@gmail.com>"
 # old cached versions when the Dockerfile is built.
 ENV REFRESHED_AT=2019-02-10
 
-RUN apk add gmp libstdc++
+RUN apk add git openssh bash gmp libstdc++
 
 CMD ["/bin/sh"]
